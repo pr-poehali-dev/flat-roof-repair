@@ -2,38 +2,40 @@ import Icon from "@/components/ui/icon";
 
 const services = [
   {
-    icon: "Shield",
-    title: "Гидроизоляция без демонтажа",
+    icon: "Droplets",
+    title: "Жидкая резина",
     description:
-      "Полимерные мембраны устраняют протечки без снятия старого покрытия",
+      "Бесшовное полимерное покрытие с самовыравнивающимися свойствами",
   },
   {
-    icon: "Wrench",
-    title: "Восстановление швов",
-    description: "Герметизация стыков и примыканий современными составами",
+    icon: "Shield",
+    title: "PVC мембраны",
+    description:
+      "Высокопрочные термопластичные мембраны для долговечной защиты",
   },
   {
-    icon: "Clock",
-    title: "Быстрый монтаж",
-    description: "Работы выполняются в 3-5 раз быстрее традиционных методов",
+    icon: "Layers",
+    title: "EPDM системы",
+    description: "Эластомерные мембраны с гарантией до 25 лет эксплуатации",
   },
   {
-    icon: "Award",
-    title: "Гарантия 15 лет",
-    description: "Официальная гарантия на все виды работ и материалы",
+    icon: "Zap",
+    title: "Полиуретановые покрытия",
+    description: "Быстротвердеющие составы для экстренного ремонта кровли",
   },
 ];
 
 const Services = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gradient-to-b from-slate-50 to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
-            Наши услуги
+            Полимерные технологии ремонта
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Комплексные решения для ремонта и восстановления кровли
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Революционные материалы для восстановления кровли без демонтажа
+            старого покрытия
           </p>
         </div>
 
@@ -41,10 +43,10 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border border-gray-100"
             >
-              <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <Icon name={service.icon} size={32} className="text-blue-600" />
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                <Icon name={service.icon} size={32} className="text-white" />
               </div>
               <h3 className="text-xl font-bold text-slate-800 mb-3">
                 {service.title}

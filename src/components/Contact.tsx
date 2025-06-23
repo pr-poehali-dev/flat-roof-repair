@@ -50,31 +50,45 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+            <h3 className="text-2xl font-bold mb-6 text-center">
+              Бесплатная диагностика кровли
+            </h3>
             <form className="space-y-6">
-              <div>
+              <div className="grid md:grid-cols-2 gap-4">
                 <Input
                   placeholder="Ваше имя"
                   className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
                 />
-              </div>
-              <div>
                 <Input
                   placeholder="Телефон"
                   className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
                 />
               </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Input
+                  placeholder="Площадь кровли (м²)"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
+                />
+                <Input
+                  placeholder="Тип здания"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
+                />
+              </div>
               <div>
                 <Textarea
-                  placeholder="Опишите вашу задачу"
+                  placeholder="Описание проблем: протечки, трещины, вздутия..."
                   rows={4}
                   className="bg-white/10 border-white/20 text-white placeholder:text-gray-300"
                 />
               </div>
               <Button className="w-full bg-orange-500 hover:bg-orange-600 text-lg py-3">
-                <Icon name="Send" className="mr-2" />
-                Получить консультацию
+                <Icon name="Calendar" className="mr-2" />
+                Заказать выезд специалиста
               </Button>
+              <p className="text-center text-sm text-gray-400">
+                Выезд на объект и составление сметы — бесплатно
+              </p>
             </form>
           </div>
         </div>
